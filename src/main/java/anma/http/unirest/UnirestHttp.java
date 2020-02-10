@@ -33,7 +33,7 @@ public class UnirestHttp {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String responseBody = response.getBody().toString();
         Planet planet = gson.fromJson(responseBody, Planet.class);
-        System.out.println(planet.getClimate());
+        System.out.println(planet);
 
 
     }
